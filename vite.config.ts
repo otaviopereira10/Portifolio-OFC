@@ -3,11 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: "/DEV-Portifolio/", // 🔥 Define a base correta para GitHub Pages
-  server: {
-    host: "0.0.0.0",
-    port: 8080,
-  },
+  base: "/Portifolio-OFC/", // 🔥 Nome exato do repositório no GitHub
   plugins: [react()],
   resolve: {
     alias: {
@@ -17,7 +13,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
     assetsDir: "assets",
-    emptyOutDir: true, // 🔥 Garante que a pasta dist seja limpa antes do build
-    manifest: true, // 🔥 Garante que os arquivos sejam mapeados corretamente
+    emptyOutDir: true,
   },
 });
