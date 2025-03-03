@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
 export default defineConfig({
-  base: "/Portifolio-OFC/", // 🔥 Nome exato do repositório no GitHub
+  base: "/Portifolio-OFC/", // 🔥 Precisa ser EXATAMENTE o nome do repositório!
   plugins: [react()],
   resolve: {
     alias: {
